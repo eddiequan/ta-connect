@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::API
-  before_action :authenticate_request
+  # TODO: TURN THIS BACK ON
+  # before_action :authenticate_request
 
   attr_reader :current_user
 
