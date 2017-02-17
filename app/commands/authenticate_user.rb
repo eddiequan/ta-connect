@@ -1,8 +1,8 @@
 class AuthenticateUser
   prepend SimpleCommand
 
-  def initialize(email, password)
-    @email = email
+  def initialize(utorid, password)
+    @utorid = utorid
     @password = password
   end
 
@@ -12,10 +12,10 @@ class AuthenticateUser
 
   private
 
-  attr_accessor :email, :password
+  attr_accessor :utorid, :password
 
   def user
-    user = User.by_email(email)
+    user = User.by_utorid(utorid)
     return user if user && user.authenticate(password)
 
     errors.add :user_authentication, 'invalid credentials'

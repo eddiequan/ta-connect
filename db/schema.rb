@@ -10,28 +10,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170214220529) do
+ActiveRecord::Schema.define(version: 20170217203934) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "users", force: :cascade do |t|
-    t.string   "email"
+    t.string   "utorid"
     t.string   "password_digest"
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
-    t.integer  "studentnumber"
+    t.integer  "student_number"
     t.string   "family_name"
     t.string   "given_name"
     t.string   "program"
     t.integer  "year"
     t.boolean  "previous_ta_experience"
-    t.integer  "phone_number"
     t.boolean  "work_status"
     t.string   "work_status_explain"
     t.string   "department"
     t.string   "department_explanation"
     t.datetime "date_of_application"
+    t.string   "phone_number"
   end
 
 end
