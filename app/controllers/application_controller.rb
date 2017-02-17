@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::API
   # TODO: TURN THIS BACK ON
-  before_action :authenticate_request
+  before_action :authenticate_request unless Rails.env.test?
 
   attr_reader :current_user
 
