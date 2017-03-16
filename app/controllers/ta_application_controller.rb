@@ -18,18 +18,18 @@ class TaApplicationController < ApplicationController
 		@application = TaApplication.new(application_params)
 
 		if @application.save
-		render json: @application, status: :created, location: @application
+			render json: @application, status: :created, location: @application
 		else
-		render json: @application.errors, status: :unprocessable_entity
+			render json: @application.errors, status: :unprocessable_entity
 		end
 	end
 
 	# PATCH/PUT /applications/1
 	def update
 		if @application.update(application_params)
-		render json: @application
+			render json: @application
 		else
-		render json: @application.errors, status: :unprocessable_entity
+			render json: @application.errors, status: :unprocessable_entity
 		end
 	end
 
@@ -40,6 +40,11 @@ class TaApplicationController < ApplicationController
 
 	def profile
 		render json: @current_application
+	end
+
+	# GET applicattions/course_id
+	def all
+
 	end
 
 	private

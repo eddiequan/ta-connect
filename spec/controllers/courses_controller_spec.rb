@@ -15,6 +15,7 @@ RSpec.describe CoursesController, type: :controller do
 	      # get '/course/:id/applicants', id: 1
 				get :applicants, params: {id: course.id }
 	      expect(response.body).to include("blah@gmail.com")
+	      expect(response.body).to eq(user2.id)
 	    end
 	end
 end

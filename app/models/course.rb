@@ -1,3 +1,3 @@
 class Course < ApplicationRecord
-	has_many :ta_applications
+	has_many :ta_application
 end

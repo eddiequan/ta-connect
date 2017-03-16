@@ -13,9 +13,10 @@ class CoursesController < ApplicationController
     render json: @course
   end
 
-  # GET /courses/id/applicants
+  # GET /course/id/applicants
   def applicants
-  	@applications = @course.ta_applications
+  	@applications = @course.ta_application
+    p(@applications)
 		applicants = []
 
 		@applications.map do |application|
