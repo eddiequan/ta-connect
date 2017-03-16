@@ -16,13 +16,18 @@ class CoursesController < ApplicationController
   # GET /courses/id/applicants
   def applicants
   	@applications = @course.ta_applications
+		applicants = []
 
-  	# Ruby Map function
+		@applications.map do |application|
+			applicants.push(get_applicant(application))
+		end
 
-  	for application in @applications
-  		return_array.add(application.user)
-  	end
+  	render json: applicants
   end
+
+	def get_applicant(application)
+		return User.find(application.user_id)
+	end
 
   private
     # Use callbacks to share common setup or constraints between actions.
@@ -33,7 +38,7 @@ class CoursesController < ApplicationController
     # Only allow a trusted parameter "white list" through.
     def course_params
       params.require(:course).permit(
-        :course_code, 
+        :course_code,
         :description)
     end
 end

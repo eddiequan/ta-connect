@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :users
   post '/authenticate', to: 'authentication#authenticate'
   resources :ta_application
+  get '/course/:id/applicants', to: 'courses#applicants'
   resources :courses
-  get '/course/:id/applicants' => 'courses#applicants'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
