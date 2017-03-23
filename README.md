@@ -26,7 +26,7 @@ Things you may want to cover:
 
 From the console:
 
-1. > $> rake db:reset db:seed
+1. > $> rake db:reset
 
 ## Starting the server
 
