@@ -22,3 +22,16 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+## Seeding data
+
+From the console:
+
+1. > $> rake db:reset db:seed
+
+## Starting the server
+
+From the console:
+
+> $> PORT=3000 rails server puma
+
+This will start the Rails app on port 3000.
