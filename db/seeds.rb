@@ -77,7 +77,75 @@ User.create([
 		:phone_number => "4162644039", 
 		:date_of_application => d1, 
 		:created_at => d2,   
-	}])
+		},
+	{
+		:utorid => "someid5",
+		:password_digest => "?",
+		:student_number => 1003648294,
+		:family_name => "Hart",
+		:given_name => "Kevin", 
+		:program => "UG",
+		:year => 2,
+		:previous_ta_experience => false,
+		:work_status => false,
+		:work_status_explain => "I'm a grown little man",
+		:department => "ECE", 
+		:department_explanation => "Ayylmao", 
+		:phone_number => "9058274930", 
+		:date_of_application => d1, 
+		:created_at => d2, 
+		},
+	{
+		:utorid => "someid6",
+		:password_digest => "?",
+		:student_number => 10004628592,
+		:family_name => "Stark",
+		:given_name => "Tony", 
+		:program => "MSC",
+		:year => 5,
+		:previous_ta_experience => true,
+		:work_status => true,
+		:work_status_explain => "I'm Iron Man",
+		:department => "DCS", 
+		:department_explanation => "Billionaire, playboy, philanthropist", 
+		:phone_number => "2228364920", 
+		:date_of_application => d1, 
+		:created_at => d2, 
+		},
+	{
+		:utorid => "someid7",
+		:password_digest => "?",
+		:student_number => 847205284,
+		:family_name => "Holmes",
+		:given_name => "Sherlock", 
+		:program => "MSAC",
+		:year => 7,
+		:previous_ta_experience => false,
+		:work_status => false,
+		:work_status_explain => "I'm a high functioning sociopath",
+		:department => "ECE", 
+		:department_explanation => "Elementary", 
+		:phone_number => "2846284946", 
+		:date_of_application => d1, 
+		:created_at => d2, 
+		},
+	{
+		:utorid => "someid8",
+		:password_digest => "?",
+		:student_number => 2462856206,
+		:family_name => "Shinya",
+		:given_name => "Kogami", 
+		:program => "PHD",
+		:year => 10,
+		:previous_ta_experience => true,
+		:work_status => true,
+		:work_status_explain => "I'm an Enforcer",
+		:department => "DCS", 
+		:department_explanation => "Don't really have one", 
+		:phone_number => "2227495739", 
+		:date_of_application => d1, 
+		:created_at => d2, 
+		}])
 
 TaApplication.create([
 	{
@@ -107,6 +175,34 @@ TaApplication.create([
 		:course_id => 4,
 		:previous_ta_experience => true,
 		:preferences => 2
+		},
+	{
+		:details => "New Experience",
+		:user_id => 5,
+		:course_id => 1,
+		:previous_ta_experience => false,
+		:preferences => 1
+		},
+	{
+		:details => "Already did it",
+		:user_id => 6,
+		:course_id => 2,
+		:previous_ta_experience => true,
+		:preferences => 5    
+		},
+	{
+		:details => "No experience",
+		:user_id => 7,
+		:course_id => 3,
+		:previous_ta_experience => false,
+		:preferences => 4
+		},
+	{
+		:details => "Cuz I'm bored",
+		:user_id => 8,
+		:course_id => 4,
+		:previous_ta_experience => true,
+		:preferences => 3
 	}])
 
 Course.create([
