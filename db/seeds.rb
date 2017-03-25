@@ -145,6 +145,23 @@ User.create([
 		:phone_number => "2227495739", 
 		:date_of_application => d1, 
 		:created_at => d2, 
+		},
+	{
+		:utorid => "someid9",
+		:password_digest => "?",
+		:student_number => 9997783839,
+		:family_name => "James",
+		:given_name => "Lebron", 
+		:program => "UG",
+		:year => 1,
+		:previous_ta_experience => false,
+		:work_status => true,
+		:work_status_explain => "NBA Player for the Cleveland Cavaliers.",
+		:department => "ECE", 
+		:department_explanation => "I enjoy basketball", 
+		:phone_number => "4169671111", 
+		:date_of_application => d1, 
+		:created_at => d2, 
 		}])
 
 TaApplication.create([
@@ -203,7 +220,14 @@ TaApplication.create([
 		:course_id => 4,
 		:previous_ta_experience => true,
 		:preferences => 3
-	}])
+		},
+	{
+		:details => "I have some experience",
+		:user_id => 9,
+		:course_id => 1,
+		:previous_ta_experience => false,
+		:preferences => 4
+		}])
 
 Course.create([
 	{
