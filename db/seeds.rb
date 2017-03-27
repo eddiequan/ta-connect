@@ -228,21 +228,3 @@ TaApplication.create([
 		:previous_ta_experience => false,
 		:preferences => 4
 		}])
-
-Course.create([
-	{
-		:course_code => "CSC108",
-		:description => "Programming in a language such as Python"
-		},
-	{
-		:course_code => "CSC148",
-		:description => "Abstract data types and dat structures for implementing them"
-		},
-	{
-		:course_code => "CSC165",
-		:description => "Introduction to abstraction and rigour"
-		},
-	{
-		:course_code => "CSC236",
-		:description => "The application of logic and proof techniques to Computer Science"
-	}])
