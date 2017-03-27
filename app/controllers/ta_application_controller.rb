@@ -1,3 +1,6 @@
+require 'rest-client'
+require 'json'
+
 class TaApplicationController < ApplicationController
 	before_action :set_application, only: [:show, :update, :destroy]
 
@@ -52,6 +55,8 @@ class TaApplicationController < ApplicationController
 	def set_application
 		@application = TaApplication.find(params[:id])
 	end
+
+	#
 
 	# Only allow a trusted parameter "white list" through.
 	def application_params

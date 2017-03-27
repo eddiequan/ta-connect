@@ -26,6 +26,14 @@ class CoursesController < ApplicationController
     render json: applicants
   end
 
+  #GET /course/id/applications
+  def applications
+    @all_applications = TaApplication.where(:course_id => params[:id])
+
+    render json: @all_applications
+
+  end
+
 	def get_applicant(application)
 		return User.find(application.user_id)
 	end

@@ -26,6 +26,7 @@ User.create([
 		:phone_number => "6479294829", 
 		:date_of_application => d1, 
 		:created_at => d2, 
+		:previously_declined => false
 		},	
 	{
 		:utorid => "someid2",
@@ -43,6 +44,7 @@ User.create([
 		:phone_number => "4169375028", 
 		:date_of_application => d1, 
 		:created_at => d2, 
+		:previously_declined => true
 		},
 	{
 		:utorid => "someid3",
@@ -60,6 +62,7 @@ User.create([
 		:phone_number => "6472348829", 
 		:date_of_application => d1, 
 		:created_at => d2, 
+		:previously_declined => false
 		},
 	{
 		:utorid => "someid4",
@@ -77,6 +80,7 @@ User.create([
 		:phone_number => "4162644039", 
 		:date_of_application => d1, 
 		:created_at => d2,   
+		:previously_declined => true
 		},
 	{
 		:utorid => "someid5",
@@ -94,6 +98,7 @@ User.create([
 		:phone_number => "9058274930", 
 		:date_of_application => d1, 
 		:created_at => d2, 
+		:previously_declined => false
 		},
 	{
 		:utorid => "someid6",
@@ -111,6 +116,7 @@ User.create([
 		:phone_number => "2228364920", 
 		:date_of_application => d1, 
 		:created_at => d2, 
+		:previously_declined => true
 		},
 	{
 		:utorid => "someid7",
@@ -128,6 +134,7 @@ User.create([
 		:phone_number => "2846284946", 
 		:date_of_application => d1, 
 		:created_at => d2, 
+		:previously_declined => false
 		},
 	{
 		:utorid => "someid8",
@@ -145,6 +152,7 @@ User.create([
 		:phone_number => "2227495739", 
 		:date_of_application => d1, 
 		:created_at => d2, 
+		:previously_declined => true
 		},
 	{
 		:utorid => "someid9",
@@ -162,6 +170,7 @@ User.create([
 		:phone_number => "4169671111", 
 		:date_of_application => d1, 
 		:created_at => d2, 
+		:previously_declined => false
 		}])
 
 TaApplication.create([
