@@ -17,10 +17,12 @@ class CoursesController < ApplicationController
 
   # GET /course/id/applicants
   def applicants
-  	@applications = TaApplication.where(:course_id => params[:id])
     applicants = []
+  	@applications = TaApplication.where(:course_id => params[:id])
     @applications.map do |application|
-      applicants.push(get_applicant(application))
+      offer = RestClient.get "http://localhost:8080/assignments/#{get_applicant(application).utorid}/#{application.course_id}"
+      offer = JSON.parse(offer)
+      applicants.push(get_applicant(application).as_json.merge({status: offer.first["status"]}))
     end
 
     render json: applicants
