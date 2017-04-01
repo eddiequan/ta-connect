@@ -44,7 +44,8 @@ User.create([
 		:phone_number => "4169375028", 
 		:date_of_application => d1, 
 		:created_at => d2, 
-		:previously_declined => true
+		:previously_declined => true,
+    :remaining_teaching_hours => 50
 		},
 	{
 		:utorid => "someid3",
@@ -62,7 +63,8 @@ User.create([
 		:phone_number => "6472348829", 
 		:date_of_application => d1, 
 		:created_at => d2, 
-		:previously_declined => false
+		:previously_declined => false,
+    :remaining_teaching_hours => 50
 		},
 	{
 		:utorid => "someid4",
@@ -80,7 +82,8 @@ User.create([
 		:phone_number => "4162644039", 
 		:date_of_application => d1, 
 		:created_at => d2,   
-		:previously_declined => true
+		:previously_declined => true,
+    :remaining_teaching_hours => 20
 		},
 	{
 		:utorid => "someid5",
@@ -116,7 +119,8 @@ User.create([
 		:phone_number => "2228364920", 
 		:date_of_application => d1, 
 		:created_at => d2, 
-		:previously_declined => true
+		:previously_declined => true,
+    :remaining_teaching_hours => 42
 		},
 	{
 		:utorid => "someid7",
@@ -134,7 +138,8 @@ User.create([
 		:phone_number => "2846284946", 
 		:date_of_application => d1, 
 		:created_at => d2, 
-		:previously_declined => false
+		:previously_declined => false,
+    :remaining_teaching_hours => 42
 		},
 	{
 		:utorid => "someid8",
