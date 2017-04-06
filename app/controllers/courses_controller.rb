@@ -20,7 +20,7 @@ class CoursesController < ApplicationController
     applicants = []
   	@applications = TaApplication.where(:course_id => params[:id])
     @applications.map do |application|
-      applicants.push(get_applicant(application))
+      applicants.push(get_applicant(application).as_json.merge({preferences: application.preferences, submitted_at: application.submitted_at, taken_in_past: application.taken_in_past}))
     end
 
     render json: applicants

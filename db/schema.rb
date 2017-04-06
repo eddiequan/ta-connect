@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170331235958) do
+ActiveRecord::Schema.define(version: 20170406203005) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,7 +22,8 @@ ActiveRecord::Schema.define(version: 20170331235958) do
     t.boolean  "previous_ta_experience"
     t.integer  "preferences"
     t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "submitted_at"
+    t.boolean  "taken_in_past"
   end
 
   create_table "users", force: :cascade do |t|

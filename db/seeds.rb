@@ -184,61 +184,88 @@ TaApplication.create([
 		:user_id => 1,
 		:course_id => 1,
 		:previous_ta_experience => false,
-		:preferences => 5
+		:preferences => 5,
+		:created_at => d1,
+		:submitted_at => d2,
+		:taken_in_past => false
 		},
 	{
 		:details => "I think I can do this",
 		:user_id => 2,
 		:course_id => 2,
 		:previous_ta_experience => true,
-		:preferences => 4    
+		:preferences => 4,
+		:created_at => d1,
+		:submitted_at => d2,
+		:taken_in_past => false
 		},
 	{
 		:details => "First time for everything",
 		:user_id => 3,
 		:course_id => 3,
 		:previous_ta_experience => false,
-		:preferences => 3 
+		:preferences => 3, 
+		:created_at => d1,
+		:submitted_at => d2,
+		:taken_in_past => false
 		},
 	{
 		:details => "Easiest course ever to TA",
 		:user_id => 4,
 		:course_id => 4,
 		:previous_ta_experience => true,
-		:preferences => 2
+		:preferences => 2,
+		:created_at => d1,
+		:submitted_at => d2,
+		:taken_in_past => false
 		},
 	{
 		:details => "New Experience",
 		:user_id => 5,
 		:course_id => 1,
 		:previous_ta_experience => false,
-		:preferences => 1
+		:preferences => 1,
+		:created_at => d1,
+		:submitted_at => d2,
+		:taken_in_past => false
 		},
 	{
 		:details => "Already did it",
 		:user_id => 6,
 		:course_id => 2,
 		:previous_ta_experience => true,
-		:preferences => 5    
+		:preferences => 5,
+		:created_at => d1,
+		:submitted_at => d2,
+		:taken_in_past => false  
 		},
 	{
 		:details => "No experience",
 		:user_id => 7,
 		:course_id => 3,
 		:previous_ta_experience => false,
-		:preferences => 4
+		:preferences => 4,
+		:created_at => d1,
+		:submitted_at => d2,
+		:taken_in_past => true
 		},
 	{
 		:details => "Cuz I'm bored",
 		:user_id => 8,
 		:course_id => 4,
 		:previous_ta_experience => true,
-		:preferences => 3
+		:preferences => 3,
+		:created_at => d1,
+		:submitted_at => d2,
+		:taken_in_past => true
 		},
 	{
 		:details => "I have some experience",
 		:user_id => 9,
 		:course_id => 1,
 		:previous_ta_experience => false,
-		:preferences => 4
+		:preferences => 4,
+		:created_at => d1,
+		:submitted_at => d2,
+		:taken_in_past => true
 		}])
