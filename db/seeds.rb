@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-d1 = DateTime.new(2017, 3, 21)
+d1 = DateTime.new(2017, 2, 21)
 d2 = DateTime.new(2017, 2, 22)
 
 User.create([
