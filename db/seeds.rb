@@ -10,6 +10,7 @@ d1 = DateTime.new(2017, 2, 21)
 d2 = DateTime.new(2017, 2, 22)
 programs = Array["UG", "MSC", "MSAC", "PHD"]
 departments = Array["ECE", "DCS"]
+teachable_hours = [0, 20, 40]
 
 for i in 1..50 do
 	User.create([
@@ -29,7 +30,8 @@ for i in 1..50 do
 			:phone_number => Faker::PhoneNumber.phone_number, 
 			:date_of_application => d1, 
 			:created_at => d2, 
-			:previously_declined => Faker::Boolean.boolean
+			:previously_declined => Faker::Boolean.boolean,
+      :remaining_teaching_hours => teachable_hours[Faker::Number.between(0,2)]
 		}
 	])
 
