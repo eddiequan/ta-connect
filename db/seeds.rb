@@ -11,7 +11,7 @@ d2 = DateTime.new(2017, 2, 22)
 programs = Array["UG", "MSC", "MSAC", "PHD"]
 departments = Array["ECE", "DCS"]
 
-for i in 1..200 do
+for i in 1..50 do
 	User.create([
 		{
 			:utorid => "someid#{i}",
